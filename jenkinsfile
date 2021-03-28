@@ -1,1 +1,1 @@
-pipeline {    agent any    stages {        stage('build job') {            steps {                sh 'python -m unittest Basic_Test.Testing'                            }        }                    }}
+pipeline {    agent any    stages {        stage('build job') {            steps {                sh 'python3 -m unittest Basic_Test.Testing'                            }        }                    }}
