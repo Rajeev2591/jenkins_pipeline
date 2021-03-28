@@ -1,1 +1,1 @@
-pipeline {    agent any    stages {        stage('build job') {            steps {                echo 'the code will build here'                            }        }                    }}
+pipeline {    agent any    stages {        stage('build job') {            steps {                sh 'python -m unittest Basic_Test.Testing'                            }        }                    }}
